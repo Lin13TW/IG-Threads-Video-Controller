@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Threads Video Pro",
+  "version": "12.3",
+  "description": "v12.3: Hide native player + rotate button",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "*://*.threads.net/*",
+    "*://*.threads.com/*",
+    "*://*.instagram.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.threads.net/*",
+        "*://*.threads.com/*",
+        "*://*.instagram.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

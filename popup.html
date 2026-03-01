@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 220px; background: #1a1a1a; color: white; font-family: -apple-system, sans-serif; padding: 16px; user-select: none; }
+    h2 { margin: 0 0 16px 0; font-size: 16px; border-bottom: 1px solid #333; padding-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    label { font-size: 14px; color: #ddd; }
+    
+    /* Switch */
+    .switch { position: relative; display: inline-block; width: 40px; height: 20px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #444; transition: .4s; border-radius: 20px; }
+    .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; transition: .4s; border-radius: 50%; }
+    input:checked + .slider { background-color: #2563eb; }
+    input:checked + .slider:before { transform: translateX(20px); }
+    
+    .footer { margin-top: 16px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #333; padding-top: 8px; }
+  </style>
+</head>
+<body>
+  <h2>
+    <span>⚙️ Settings</span>
+  </h2>
+  
+  <div class="row">
+    <label for="toggle-threads">Threads</label>
+    <label class="switch">
+      <input type="checkbox" id="toggle-threads">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <label for="toggle-instagram">Instagram</label>
+    <label class="switch">
+      <input type="checkbox" id="toggle-instagram">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="footer">Threads Video Pro</div>
+  <script src="popup.js"></script>
+</body>
+</html>
