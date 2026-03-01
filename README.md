@@ -1,4 +1,4 @@
-# Threads Video Controller
+# IG / Threads Video Controller
 
 Chrome 擴充套件，為 Threads 和 Instagram 網頁版加入自訂影片控制器。
 
