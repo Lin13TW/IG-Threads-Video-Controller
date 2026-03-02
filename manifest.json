@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Threads Video Pro",
-  "version": "12.3",
-  "description": "v12.3: Hide native player + rotate button",
+  "version": "1.4",
+  "description": "v14.3: IG expanded post fix - small modal vs large post dialog",
   "permissions": [
     "activeTab",
     "scripting",
